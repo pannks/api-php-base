@@ -1,0 +1,16 @@
+
+vendor/
+node_modules/
+.git/
+.env
+
+src/templates/schemas/*
+src/templates/messages/*
+src/templates/emails/*
+src/templates/chats/*
+
+!src/templates/schemas/_example*
+!src/templates/messages/_example*
+!src/templates/emails/_example*
+!src/templates/chats/_example*
+
