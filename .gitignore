@@ -3,6 +3,8 @@ vendor/
 node_modules/
 .git/
 .env
+.env.prod
+.env.local
 
 src/templates/schemas/*
 src/templates/messages/*

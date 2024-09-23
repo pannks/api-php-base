@@ -36,27 +36,9 @@ class StripeController
     $response_obj = $this->stripeService->getCheckoutStatus(session_id: $session_id);
 
     // if ($response_obj['status'] === 'complete') {
-    //   $mailService = $this->mailService;
-
-    //   $res = $mailService->send([
-    //     'to' => $response_obj['customer_email'],
-    //     'toName' => $response_obj['customer_email'],
-    //     'from' => "pann@gmail.com",
-    //     'fromName' => "PannKs",
-    //     'name' => $request->body['customer_name'] ?? '',
-    //     'subject' => 'Thank You for Ordering',
-    //     "orderNumber" => $request->body['order_number'] ?? '',
-    //     'templateName' => 'thank_you',
-    //     "buttonUrl" => "https://google.com",
-    //     "buttonText" => "Get File",
-    //   ]);
-    //   if ($res) {
-    //     echo Response::json($response_obj);
-    //   } else {
-    //     $response_obj['message'] = 'Failed to send email';
-    //     echo Response::json($response_obj, 500);
-    //   }
+    //
     // } 
+
     echo Response::json($response_obj);
   }
   public function getSessionInfo(Request $request): void

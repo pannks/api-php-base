@@ -1,7 +1,12 @@
+all-local: start db-only
+
 all: start
 
 start-local:
 	php -S localhost:8000
+
+db-only:
+	docker-compose up -d --build mysql
 
 start:
 	docker-compose up -d --build
